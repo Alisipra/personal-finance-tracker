@@ -7,6 +7,7 @@ const ModalProvider = (props) => {
     const [modalType, setModalType] = useState("");
     const [transaction,setTransaction]=useState([]);
     
+  
       useEffect(() => {
 
     localStorage.setItem(
@@ -20,6 +21,7 @@ const ModalProvider = (props) => {
 
   return (
     <>
+    <h1>Hello world</h1>
     <ModalContext.Provider value={{modal,setModal,modalType,setModalType,transaction,setTransaction}}>
     {props.children}
     </ModalContext.Provider>
